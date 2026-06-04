@@ -30,12 +30,12 @@ Idea folder
 
 ## Install
 
-Copy the `validate` folder into your Claude Code skills directory:
+Copy the `agentic-business-validator` folder into your Claude Code skills directory:
 
 ```bash
 # Clone, then copy the skill into your personal skills folder
 git clone https://github.com/JeroenR123/business-validator-skill.git
-cp -r business-validator-skill/validate ~/.claude/skills/
+cp -r business-validator-skill/agentic-business-validator ~/.claude/skills/
 ```
 
 Or drop it into a project's `.claude/skills/` to share it with a repo.

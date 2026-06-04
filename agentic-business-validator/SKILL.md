@@ -1,5 +1,5 @@
 ---
-name: validate
+name: agentic-business-validator
 description: Validate a business idea by running it through a team of 6 specialized agents in parallel. Use this skill whenever the user asks to validate an idea, analyze a business idea, run the validator, stress-test a startup concept, or check if an idea is viable. Also trigger when the user references an idea folder and wants to know if it's worth pursuing.
 ---
 
@@ -29,7 +29,7 @@ Launch all 6 agents **simultaneously in a single message**. Use the Agent tool. 
 
 **For each agent, give it this instruction:**
 
-> You are the {Agent Name}. Read your full system prompt from the validate skill's references directory.
+> You are the {Agent Name}. Read your full system prompt from the agentic-business-validator skill's references directory.
 >
 > Analyze this business idea. The idea folder is `Ideas/{slug}/`. Read everything in it — starting with `Pitch.md`.
 >
@@ -115,7 +115,7 @@ Based on all 6 analyses + cross-fire:
 
 If GO, launch the **Assembler** agent:
 
-> You are the Assembler. Read your system prompt from the validate skill's references directory (`references/7-assembler.md`).
+> You are the Assembler. Read your system prompt from the agentic-business-validator skill's references directory (`references/7-assembler.md`).
 >
 > Read every file in `Ideas/{slug}/` and compile a polished Business Plan at `Ideas/{slug}/Business Plan.md`.
 >
