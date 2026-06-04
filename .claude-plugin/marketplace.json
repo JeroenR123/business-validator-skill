@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "jeroenr123-validator",
+  "owner": {
+    "name": "JeroenR123",
+    "url": "https://github.com/JeroenR123"
+  },
+  "metadata": {
+    "description": "A Claude Code plugin that validates business ideas with a team of 6 specialized agents running in parallel, then returns a GO/PIVOT/KILL verdict."
+  },
+  "plugins": [
+    {
+      "name": "agentic-business-validator",
+      "source": "./",
+      "description": "Validate a business idea by running it through a team of 6 specialized agents in parallel (Market Scout, Skeptic, Customer, Strategist, Financials, Architect), then a cross-fire round where they challenge each other, ending in a GO/PIVOT/KILL verdict and a business plan for ideas that survive.",
+      "author": {
+        "name": "JeroenR123",
+        "url": "https://github.com/JeroenR123"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/JeroenR123/business-validator-skill",
+      "keywords": [
+        "business-validation",
+        "startup",
+        "idea-validation",
+        "market-research",
+        "business-plan",
+        "agents",
+        "multi-agent"
+      ]
+    }
+  ]
+}

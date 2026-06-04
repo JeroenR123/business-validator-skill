@@ -30,15 +30,27 @@ Idea folder
 
 ## Install
 
-Copy the `agentic-business-validator` folder into your Claude Code skills directory:
+Install it as a plugin from inside Claude Code. First add this repo as a marketplace, then install the plugin:
+
+```
+/plugin marketplace add JeroenR123/business-validator-skill
+/plugin install agentic-business-validator@jeroenr123-validator
+```
+
+That's it — the `validate` skill is now available. To update later, run `/plugin marketplace update jeroenr123-validator`.
+
+<details>
+<summary>Manual install (without the plugin system)</summary>
+
+If you'd rather not use the plugin system, copy the skill folder straight into your skills directory:
 
 ```bash
-# Clone, then copy the skill into your personal skills folder
 git clone https://github.com/JeroenR123/business-validator-skill.git
-cp -r business-validator-skill/agentic-business-validator ~/.claude/skills/
+cp -r business-validator-skill/skills/agentic-business-validator ~/.claude/skills/
 ```
 
 Or drop it into a project's `.claude/skills/` to share it with a repo.
+</details>
 
 ## Use
 
